@@ -1,12 +1,12 @@
-summary: Codelab Markdown Template
-id: codelab-markdown-template
-categories: spring,cloudrun
-tags: cloudrun
+summary: Lab for Spring Cloud GCP for Cloud SQL - MySQL
+id: codelab-spring-cloud-gcp-mysql
+categories: spring,cloudsql
+tags: cloudsql
 status: Draft
 authors: shinyay
 Feedback Link: https://twitter.com/yanashin18618
 
-# ラボのタイトル
+# Lab for Spring Cloud GCP for Cloud SQL(MySQL)
 <!-- ------------------------ -->
 ## はじめに 
 Duration: 5
@@ -116,7 +116,6 @@ Duration: 3
 展開後に適当なIDEでプロジェクトを開いてください。
 なお、ビルドツールとして [Maven](https://maven.apache.org/) および [Gradle](https://gradle.org/) が実施可能です。
 
-![ProjectImage](images/tutorial-project.png)
 
 <!-- ------------------------ -->
 ## Spring Boot チュートリアル 概要
@@ -180,7 +179,6 @@ Error creating bean with name 'com.google.tutorial.TutorialApplicationTests': Un
 ## テスト完了
 Duration: 1
 
-![test-complete](images/test-complete.png)
 
 全てのテストが正常終了し、アプリケーションの実装要件を全て満たしました。
 
