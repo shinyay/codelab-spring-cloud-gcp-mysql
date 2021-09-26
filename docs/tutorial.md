@@ -91,7 +91,12 @@ I explained the overview of Spring Cloud GCP for Cloud SQL at the forllowing art
 This lab makes you enable to create the project and implement the application.
 
 ### Spring Data JPA
-Spring Cloud GCP does not depend on the persistent framework, such as Spring JDBC, Spring Data JDBC or Spring Data JPA. I use Spring Data JPA as an example.
+Spring Data JPA provides repository support for the Java Persistence API (JPA). It eases development of applications that need to access JPA data sources.
+
+Positive
+: Spring Cloud GCP does not depend on the persistent framework, such as Spring JDBC, Spring Data JDBC or Spring Data JPA. I use Spring Data JPA as an example.
+
+
 
 <!-- ------------------------ -->
 ## Java プロジェクトの準備
