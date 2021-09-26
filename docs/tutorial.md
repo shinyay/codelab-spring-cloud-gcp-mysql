@@ -84,6 +84,12 @@ You will learn the followings through this lab:
 - [Spring Cloud GCP for Cloud SQL](https://cloud.spring.io/spring-cloud-gcp/reference/html/#cloud-sql)
 - [Spring Data JPA](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#reference)
 
+### Spring Cloud GCP
+I explained the overview of Spring Cloud GCP for Cloud SQL at the forllowing article:
+- [Getting Started with Spring Cloud GCP: Cloud SQL](https://medium.com/@shinyay/getting-started-with-spring-cloud-gcp-cloud-sql-9ccdf40bcfbc)
+
+This lab makes you enable to create the project and implement the application.
+
 
 
 <!-- ------------------------ -->
