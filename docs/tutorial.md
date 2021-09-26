@@ -8,94 +8,83 @@ Feedback Link: https://twitter.com/yanashin18618
 
 # Lab for Spring Cloud GCP for Cloud SQL(MySQL)
 <!-- ------------------------ -->
-## はじめに 
+## Prerequisite 
 Duration: 5
 
-### 環境前提
-次のソフトウェアをインストールしてください:
-
-Positive
-: [Cloud Shell](https://shell.cloud.google.com/) の場合は、以下インストール不要です。
+### Lab Environment
+Install the following softwares:
 
 - Java
 - Docker ([https://www.docker.com](https://www.docker.com))
-- Cloud SDK ([https://cloud.google.com/sdk](https://cloud.google.com/sdk))
-  - [インストール方法](https://cloud.google.com/sdk/docs/install)
+- Google Cloud SDK ([https://cloud.google.com/sdk](https://cloud.google.com/sdk))
+  - [Instructions](https://cloud.google.com/sdk/docs/install)
 - IDE
   - IntelliJ IDEA
   - VS Code
   - NetBeans
   - Eclipse
 
-このチュートリアルは、次のバージョンのソフトウェア環境で動作確認をしています:
+I have tested this tutorial in the following software environment:
+- Java: openjdk 11.0.2 2019-01-15
+- Docker v20.10.7
+- Google Cloud SDK 358.0.0
 - IDE: Intellij IDEA
 
 ```shell script
 $ java --version
-openjdk 11.0.10 2021-01-19
-OpenJDK Runtime Environment AdoptOpenJDK (build 11.0.10+9)
-OpenJDK 64-Bit Server VM AdoptOpenJDK (build 11.0.10+9, mixed mode)
+openjdk 11.0.2 2019-01-15
+OpenJDK Runtime Environment 18.9 (build 11.0.2+9)
+OpenJDK 64-Bit Server VM 18.9 (build 11.0.2+9, mixed mode)
 ```
 ```shell script
 $ docker version
-Client: Docker Engine - Community
- Cloud integration: 1.0.12
- Version:           20.10.5
+Client:
+ Cloud integration: 1.0.17
+ Version:           20.10.7
  API version:       1.41
- Go version:        go1.13.15
- Git commit:        55c4c88
- Built:             Tue Mar  2 20:13:00 2021
+ Go version:        go1.16.4
+ Git commit:        f0df350
+ Built:             Wed Jun  2 11:56:22 2021
  OS/Arch:           darwin/amd64
  Context:           default
  Experimental:      true
 
 Server: Docker Engine - Community
  Engine:
-  Version:          20.10.5
+  Version:          20.10.7
   API version:      1.41 (minimum version 1.12)
   Go version:       go1.13.15
-  Git commit:       363e9a8
-  Built:            Tue Mar  2 20:15:47 2021
+  Git commit:       b0f5bc3
+  Built:            Wed Jun  2 11:54:58 2021
   OS/Arch:          linux/amd64
   Experimental:     false
  containerd:
-  Version:          1.4.4
-  GitCommit:        05f951a3781f4f2c1911b05e61c160e9c30eaa8e
+  Version:          1.4.6
+  GitCommit:        d71fcd7d8303cbf684402823e425e9dd2e99285d
  runc:
-  Version:          1.0.0-rc93
-  GitCommit:        12644e614e25b05da6fd08a38ffa0cfe1903fdec
+  Version:          1.0.0-rc95
+  GitCommit:        b9ee9c6314599f1b4a7f497e1f1f856fe433d3b7
  docker-init:
   Version:          0.19.0
   GitCommit:        de40ad0
 ```
 ```shell script
 $ gcloud version
-Google Cloud SDK 337.0.0
-alpha 2021.04.16
-beta 2021.04.16
+Google Cloud SDK 358.0.0
 ```
 
 Positive
-: 必ずしも同一バージョンである必要はありません。
+: You don't have to have the same version.
 
 <!-- ------------------------ -->
-## このラボについて
+## Introduction
 Duration: 1
 
-このラボでは、以下の内容を学習します。
-- [Spring Boot](https://spring.io/projects/spring-boot) を用いたアプリケーション開発
-- [Cloud Run](https://cloud.google.com/run) へのアプリケーションデプロイメント
+You will learn the followings through this lab:
+- [Spring Cloud GCP for Cloud SQL](https://cloud.spring.io/spring-cloud-gcp/reference/html/#cloud-sql)
+- [Spring Data JPA](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#reference)
 
-### Spring Boot
-このラボでは、値を返すだけのシンプルな REST API を提供するアプリケーションを作成します。
 
-### Cloud Run
-このラボでは、以下の内容を学習します。
-- [Cloud Run のコンソール画面](https://console.cloud.google.com/run)からデプロイする方法
-- [Cloud SDK](https://cloud.google.com/sdk) を用いたコマンドラインからデプロイする方法
-
-Negative
-: このラボでは、CI/CD パイプラインを用いた自動デプロイは対象外です。
 
 <!-- ------------------------ -->
 ## Java プロジェクトの準備
