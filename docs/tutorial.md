@@ -120,30 +120,30 @@ Positive
 : You can choose either [Maven](https://maven.apache.org/) or [Gradle](https://gradle.org/) as a build tool.
 
 <!-- ------------------------ -->
-## Spring Boot チュートリアル 概要
+## How to proceed with the lab
 Duration: 1
 
-Spring Boot チュートリアルプロジェクトには、予めテストコードを配置しています。
-このテストコードを実施して、その結果を見ながらメインコードの実装を行っていきます。
+Test code is placed in the tutorial project in advance. You will implement the application code by executing the test codes and seeing the results, just like Test Driven Development.
 
-各 IDE 環境やビルドツールによって、テストの実行方法が異なります。このチュートリアルでは、以下の組み合わせで作成していますが、各自の環境に読み替えて実施してください。
+Each IDE and build tool has a different way to run tests.　In this tutorial, I have used the following combination, but you can adapt it to your own environment.
+
 - IDE: `InteliJ IDEA`
-- ビルドツール: `Maven`
+- Build tool: `Maven`
 
-IntelliJ + Maven の場合
+Case: IntelliJ + Maven
 
 ![intellij-maven](images/intellij-maven.png)
 
-IntelliJ + Gradle の場合
+Case: IntelliJ + Gradle
 
 ![intellij-gradle](images/intellij-gradle.png)
 
-Maven Wrapper の場合
+Case: CLI + Maven Wrapper
 ```shell script
 $ mvnw test
 ```
 
-Gradle Wrapper の場合
+Case: CLI + Gradle Wrapper
 ```shell script
 $ gradlew test
 ```
