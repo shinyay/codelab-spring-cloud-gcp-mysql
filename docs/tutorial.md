@@ -314,6 +314,9 @@ This test code describes the followings:
 - This API's endpoint is `/api/v1/employees` to access by `POST`
 - It returns `CREATED (201)`
 
+### Clue
+You can implement the other methos in the same way.
+
 <!-- ------------------------ -->
 ## Completed
 Duration: 1
