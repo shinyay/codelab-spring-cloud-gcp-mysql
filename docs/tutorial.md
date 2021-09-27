@@ -260,7 +260,7 @@ You will see such as the following error message:
 java.lang.AssertionError: Status expected:<200> but was:<404>
 ```
 
-It means the api is not defined yet. Now you take a look at the test code:
+It means the api is not defined yet. Now take a look at the test code:
 
 ```java
     @MockBean
@@ -276,8 +276,43 @@ It means the api is not defined yet. Now you take a look at the test code:
 
 This test code describes the followings:
 - This application has `EmployeeService` class as service layer
-- The service class has `findAllEmployees` method which return `List<Employee> employeeList`
+- The service class has `findAllEmployees` method which returns `List<Employee>`
 - This API's endpoint is `/api/v1/employees` to access by `GET` 
+
+### Clue: `Given_EmployeeController_When_addNewEmployee_Then_return_201()`
+
+#### HTTP Response code mismatch
+You will see such as the following error message:
+
+```java
+java.lang.AssertionError: Status expected:<201> but was:<405>
+```
+
+It means this API returns `CREATE (201)` not 200. Now take a look at the test code:
+
+```java
+    @Test
+    public void Given_EmployeeController_When_addNewEmployee_Then_return_201() throws Exception {
+
+        var json = mapper.writeValueAsString(employeeData);
+
+        Mockito.when(service.registerEmployee(employeeData)).thenReturn(employeeData);
+
+        mockMvc.perform(
+                post("/api/v1/employees")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(json)
+                        .accept(MediaType.APPLICATION_JSON)
+                )
+                .andDo(print())
+                .andExpect(status().isCreated());
+    }
+```
+
+This test code describes the followings:
+- The service class has `registerEmployee` method which has `Employee` parameter and returns `Employee`
+- This API's endpoint is `/api/v1/employees` to access by `POST`
+- It returns `CREATED (201)`
 
 <!-- ------------------------ -->
 ## Completed
