@@ -99,12 +99,12 @@ Positive
 
 
 <!-- ------------------------ -->
-## Java プロジェクトの準備
+## Preparing a Project template
 Duration: 3
 
-### チュートリアル プロジェクトの取得
+### Expanding a project template archive
 
-次のファイルをダウンロードし、適当な場所へ配置および展開をしてください。
+Download the folloing file and expand it at the proper directory.
 
 - tutorial.tar.gz
 
@@ -112,11 +112,12 @@ Duration: 3
   [Download](tutorial.tar.gz)
 </button>
 
-### チュートリアル プロジェクトの IDE 表示
+### Import the project template into your IDE
 
-展開後に適当なIDEでプロジェクトを開いてください。
-なお、ビルドツールとして [Maven](https://maven.apache.org/) および [Gradle](https://gradle.org/) が実施可能です。
+Open the project template from your IDE.
 
+Positive
+: You can choose either [Maven](https://maven.apache.org/) or [Gradle](https://gradle.org/) as a build tool.
 
 <!-- ------------------------ -->
 ## Spring Boot チュートリアル 概要
