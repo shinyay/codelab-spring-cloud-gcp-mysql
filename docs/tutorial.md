@@ -159,13 +159,11 @@ This lab has three kinds of test codes:
 
 ![tests](images/tests.png)
 
-これらのエラー内容を確認して、正常終了するように修正を行いながらコードを完成させます。
-
 <!-- ------------------------ -->
-## テスト: アプリケーションコンテキスト
+## Persistent layer Unit test
 Duration: 3
 
-- 対象テストクラス: ApplicationContextTests
+- Test class: RepositoryTest
 
 ![TutorialApplicationTests](images/error-TutorialApplicationTests.png)
 
