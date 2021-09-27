@@ -179,13 +179,34 @@ Now then you can check the result and implement the persistence logic.
 
 ### Clue: `Given_employee_When_findAll_Then_countInitialValue()`
 
-You can see the following error messaeg:
+#### Enitity definition
+You might see the following error messaeg:
 
 ```java
 Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.google.codelab.entity.Employee
 ```
 
 As I describe above, this application uses `Spring Data JPA`. Therefore you need to define entity.
+
+#### Coulumn name mismatch
+
+```java
+Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'employee0_.emp_id' in 'field list'
+```
+
+You can define the custom column name with `@Column` annotation. 
+
+The schema is defined by `V1__Create_Employee_table.sql`:
+
+```sql
+CREATE TABLE employee
+(
+    employee_id   integer     NOT NULL AUTO_INCREMENT,
+    employee_name varchar(64) NOT NULL UNIQUE,
+    role          varchar(32) DEFAULT NULL,
+    PRIMARY KEY (employee_id)
+);
+```
 
 <!-- ------------------------ -->
 ## テスト完了
