@@ -149,13 +149,15 @@ $ gradlew test
 ```
 
 <!-- ------------------------ -->
-## 最初のテスト実行
+## Test Code Overview
 Duration: 2
 
-それでは、最初にテストを実行してみます。
-テストを実行すると、メインコードの実装がまだないため、以下のようにエラーがテスト結果に表示されます。
+This lab has three kinds of test codes:
+- Persistent layer Unit test
+- Web layer Unit test
+- Integration Test
 
-![error](images/error-results.png)
+![tests](images/tests.png)
 
 これらのエラー内容を確認して、正常終了するように修正を行いながらコードを完成させます。
 
