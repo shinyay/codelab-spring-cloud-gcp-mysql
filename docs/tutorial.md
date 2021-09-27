@@ -171,20 +171,21 @@ First of all, run the persistence layer test:
 $ ./gradlew test --tests "*RepositoryTest" -i
 ```
 
-Now you can see the following result because you don't have implemented logics at all yet.
-
+Now you can see the following result because you don't have implemented any logics at all yet.
 
 ![repository-all-fail](images/repo-all-fail.png)
 
-### ヒント: `contextLoads`
+Now then you can check the result and implement the persistence logic.
 
-以下のようにエラーが表示されています。
-```shell script
-Error creating bean with name 'com.google.tutorial.TutorialApplicationTests': Unsatisfied dependency expressed through field 'controller'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.google.tutorial.controller.TutorialController' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+### Clue: `Given_employee_When_findAll_Then_countInitialValue()`
+
+You can see the following error messaeg:
+
+```java
+Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.google.codelab.entity.Employee
 ```
 
-これは、`@Autowired` により **Dependency Injection** される対象が存在しないために発生しているエラーです。
-インジェクションを行おうとしている対象のクラス `TutorialController` のクラス定義を確認してください。
+As I describe above, this application uses `Spring Data JPA`. Therefore you need to define entity.
 
 <!-- ------------------------ -->
 ## テスト完了
