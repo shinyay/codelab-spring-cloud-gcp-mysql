@@ -208,8 +208,24 @@ CREATE TABLE employee
 );
 ```
 
+#### Custom interface
+You can find a built-in method when you see `Given_employee_When_find_by_id_Then_querySpecificEmployee`:
+
+```java
+Optional<Employee> result = repository.findById(1L);
+```
+
+If you define the custom interface, you need to implement it at the Repository interface. In this lab, the following interface has been already coded:
+
+```java
+public interface EmployeeRepository extends JpaRepository<Employee, Long> {
+    List<Employee> findByDepId(long l);
+}
+```
+
+
 <!-- ------------------------ -->
-## テスト完了
+## Completed
 Duration: 1
 
 
