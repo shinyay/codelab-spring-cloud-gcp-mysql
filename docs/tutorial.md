@@ -153,19 +153,28 @@ $ gradlew test
 Duration: 2
 
 This lab has three kinds of test codes:
-- Persistent layer Unit test
+- Persistence layer Unit test
 - Web layer Unit test
 - Integration Test
 
 ![tests](images/tests.png)
 
 <!-- ------------------------ -->
-## Persistent layer Unit test
+## Persistence layer Unit test
 Duration: 3
 
 - Test class: RepositoryTest
 
-![TutorialApplicationTests](images/error-TutorialApplicationTests.png)
+First of all, run the persistence layer test:
+
+```shell
+$ ./gradlew test --tests "*RepositoryTest" -i
+```
+
+Now you can see the following result because you don't have implemented logics at all yet.
+
+
+![repository-all-fail](images/repo-all-fail.png)
 
 ### ヒント: `contextLoads`
 
