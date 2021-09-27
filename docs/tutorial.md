@@ -128,7 +128,7 @@ Test code is placed in the tutorial project in advance. You will implement the a
 Each IDE and build tool has a different way to run tests.　In this tutorial, I have used the following combination, but you can adapt it to your own environment.
 
 - IDE: `InteliJ IDEA`
-- Build tool: `Maven`
+- Build tool: `Gradle`
 
 Case: IntelliJ + Maven
 
