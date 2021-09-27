@@ -161,7 +161,7 @@ This lab has three kinds of test codes:
 
 <!-- ------------------------ -->
 ## Persistence layer Unit test
-Duration: 3
+Duration: 5
 
 - Test class: RepositoryTest
 
@@ -172,6 +172,11 @@ $ ./gradlew test --tests "*RepositoryTest" -i
 ```
 
 Now you can see the following result because you don't have implemented any logics at all yet.
+I have put a few codes:
+
+- Entity template class
+- Repository interface
+- Service template class
 
 ![repository-all-fail](images/repo-all-fail.png)
 
@@ -222,6 +227,30 @@ public interface EmployeeRepository extends JpaRepository<Employee, Long> {
     List<Employee> findByDepId(long l);
 }
 ```
+
+### All test passed
+Implement the application so that it passes all tests.
+
+![repo-all-pass](images/repo-all-pass.png)
+
+<!-- ------------------------ -->
+## Web layer Unit test
+Duration: 5
+
+- Test class: WebLayerTest
+
+Second of all, run the web layer test:
+
+```shell
+$ ./gradlew test --tests "*WebLayerTest" -i
+```
+
+Now you can see the following result because you don't have implemented any logics at controller and service class.
+
+![web-all-fail](images/web-all-fail.png)
+
+Now then you can check the result and implement the persistence logic.
+
 
 
 <!-- ------------------------ -->
