@@ -251,7 +251,33 @@ Now you can see the following result because you don't have implemented any logi
 
 Now then you can check the result and implement the persistence logic.
 
+### Clue: `Given_EmployeeController_When_findAllEmployees_Then_return_200()`
 
+#### API Undefined
+You will see such as the following error message:
+
+```java
+java.lang.AssertionError: Status expected:<200> but was:<404>
+```
+
+It means the api is not defined yet. Now you take a look at the test code:
+
+```java
+    @MockBean
+    private EmployeeService service;
+    private List<Employee> employeeList;
+        :
+        Mockito.when(service.findAllEmployees()).thenReturn(employeeList);
+
+        mockMvc.perform(get("/api/v1/employees"))
+                .andDo(print())
+                .andExpect(status().isOk());
+```
+
+This test code describes the followings:
+- This application has `EmployeeService` class as service layer
+- The service class has `findAllEmployees` method which return `List<Employee> employeeList`
+- This API's endpoint is `/api/v1/employees` to access by `GET` 
 
 <!-- ------------------------ -->
 ## Completed
