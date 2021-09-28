@@ -321,7 +321,7 @@ You can implement the other methos in the same way.
 
 <!-- ------------------------ -->
 ## Integration test
-Duration: 5
+Duration: 10
 
 - Test class: IntegrationTest
 
