@@ -464,6 +464,15 @@ Note: Recompile with -Xlint:unchecked for details.
 2021-09-28 22:05:25.094  INFO 34100 --- [           main] com.google.codelab.TutorialApplication   : Started TutorialApplication in 3.776 seconds (JVM running for 4.153)
 ```
 
+### Confirm the application
+
+Let's access the application to make sure it's running properly.
+
+POST Data:
+
+```shell
+$ curl -X POST -H "Content-Type: application/json" -d '{"name":"Alice", "role":"Security Engineer","departmentId":100}' localhost:8080//api/v1/employees
+```
 
 <!-- ------------------------ -->
 ## Completed
