@@ -346,6 +346,16 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'employee0_.dep_id' 
 
 You can define the custom column name with `@Column` annotation. 
 
+The column is added by `V3__Alter_Employee_Add_DepartmentId.sql`:
+
+```sql
+ALTER TABLE employee
+    ADD department_id integer NOT NULL
+    AFTER employee_id;
+ALTER TABLE employee
+    ADD FOREIGN KEY (department_id) REFERENCES department (department_id);
+```
+
 <!-- ------------------------ -->
 ## Completed
 Duration: 1
