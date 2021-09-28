@@ -383,6 +383,20 @@ You can implement the other methos in the same way.
 ![integration-all-pass](images/integration-all-pass.png)
 
 <!-- ------------------------ -->
+## Boot run on local
+Duration: 10
+
+Let's boot run the application when all the tests are passed:
+
+```shell
+$ ./gradlew clean bootRun
+```
+
+
+
+
+
+<!-- ------------------------ -->
 ## Completed
 Duration: 1
 
