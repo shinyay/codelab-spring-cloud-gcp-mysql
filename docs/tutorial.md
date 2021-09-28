@@ -423,7 +423,7 @@ spring:
     enabled: false
 ```
 
-### Database
+### Database on local
 You have not prepared for the database though, I have already added the dependency of H2 database which is embedded database to `build.gradle` and `pom.xml`.
 
 This will enable you to use the database.
@@ -434,6 +434,35 @@ dependencies {
 }
 ```
 
+### Boot run again
+
+Now then, let's boot run again.
+
+```shell
+$ ./gradlew clean bootRun
+```
+
+You will see the followings:
+
+```
+> Task :compileJava
+Note: /Users/shinyay/works/spring/codelab-spring-cloud-gcp-mysql-code-java/src/main/java/com/google/codelab/controller/EmployeeController.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+> Task :bootRun
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.5.4)
+    :
+    :
+2021-09-28 22:05:25.085  INFO 34100 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-09-28 22:05:25.094  INFO 34100 --- [           main] com.google.codelab.TutorialApplication   : Started TutorialApplication in 3.776 seconds (JVM running for 4.153)
+```
 
 
 <!-- ------------------------ -->
