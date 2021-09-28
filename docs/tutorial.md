@@ -502,8 +502,13 @@ This configuration is easy as well. The point is the following:
 - spring.cloud.gcp.sql.database-name
 - spring.datasource
 
+#### instance-connection-name
 
+You can retrieve the instance connnection name by the following command:
 
+```shell
+$ gcloud sql instances describe my-mysql --format='value(connectionName)'
+```
 
 <!-- ------------------------ -->
 ## Completed
