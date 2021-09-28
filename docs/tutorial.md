@@ -235,7 +235,7 @@ Implement the application so that it passes all tests.
 
 <!-- ------------------------ -->
 ## Web layer Unit test
-Duration: 5
+Duration: 10
 
 - Test class: WebLayerTest
 
@@ -316,6 +316,11 @@ This test code describes the followings:
 
 ### Clue
 You can implement the other methos in the same way.
+
+![web-all-pass](images/web-all-pass.png)
+
+
+
 
 <!-- ------------------------ -->
 ## Completed
