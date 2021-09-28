@@ -514,6 +514,14 @@ Ofcource you can find it on Cloud Console:
 
 ![connection-name](images/connection-name.png)
 
+#### database-name
+
+You can confirm your database name created by the following command:
+
+```shell
+$ gcloud sql databases list -i my-mysql
+```
+
 <!-- ------------------------ -->
 ## Completed
 Duration: 1
