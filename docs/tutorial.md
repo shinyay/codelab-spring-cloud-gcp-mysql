@@ -365,6 +365,17 @@ You will see such as the following error message:
 java.lang.AssertionError: Status expected:<200> but was:<405>
 ```
 
+As you might have known, `HTTP Status: 405` is `Method Not Allowed`, which means your http method is wrong.
+
+Now take a look at the test code:
+
+```java
+        mockMvc.perform(delete("/api/v1/employees/1"))
+                .andDo(print())
+                .andExpect(status().isOk());
+```
+
+The above code expects DELETE method with employee id. It might be good to check your api.
 
 <!-- ------------------------ -->
 ## Completed
