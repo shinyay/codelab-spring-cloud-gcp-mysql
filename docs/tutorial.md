@@ -492,6 +492,15 @@ You need to create a Cloud SQL instance. It is easy to create it by following my
 
 - [Getting Started with Spring Cloud GCP: Cloud SQL](https://medium.com/@shinyay/getting-started-with-spring-cloud-gcp-cloud-sql-9ccdf40bcfbc)
 
+### Configuring a Datasource with Cloud SQL
+
+Next you need to configure a datasource at application properties.
+
+This configuration is easy as well. The point is the following:
+
+- spring.cloud.gcp.sql.instance-connection-name
+- spring.cloud.gcp.sql.database-name
+- spring.datasource
 
 
 
