@@ -356,6 +356,16 @@ ALTER TABLE employee
     ADD FOREIGN KEY (department_id) REFERENCES department (department_id);
 ```
 
+### Clue: `Given_Integration_When_deleteEmployeeByEmployeeId_Then_return_404()`
+
+#### Not Supported API
+You will see such as the following error message:
+
+```java
+java.lang.AssertionError: Status expected:<200> but was:<405>
+```
+
+
 <!-- ------------------------ -->
 ## Completed
 Duration: 1
