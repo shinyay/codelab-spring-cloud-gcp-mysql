@@ -413,7 +413,13 @@ Action:
 Review the locations above or check your Flyway configuration
 ```
 
+Therefore you have to disable `Flyway`. The easiest way is to remove the dependency from `build.gradle` or `pom.xml`. 
 
+```yaml
+spring:
+  flyway:
+    enabled: false
+```
 
 
 <!-- ------------------------ -->
