@@ -522,6 +522,15 @@ You can confirm your database name created by the following command:
 $ gcloud sql databases list -i my-mysql
 ```
 
+#### datasource
+
+I suppose you have already know the property. This property is the datasource configuration as usual.
+
+You can find the how-to properties:
+[Spring Boot Reference](https://docs.spring.io/spring-boot/docs/current/reference/html/howto.html#howto.data-access.configure-custom-datasource)
+
+
+
 <!-- ------------------------ -->
 ## Completed
 Duration: 1
