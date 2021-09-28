@@ -319,7 +319,23 @@ You can implement the other methos in the same way.
 
 ![web-all-pass](images/web-all-pass.png)
 
+<!-- ------------------------ -->
+## Integration test
+Duration: 5
 
+- Test class: IntegrationTest
+
+Now then, run the integration test between web and database:
+
+```shell
+$ ./gradlew test --tests "*IntegrationTest" -i
+```
+
+Now you can see the following result because you don't have implemented any logics at controller and service class.
+
+![integration-all-fail](images/integration-all-fail.png)
+
+### Clue: 
 
 
 <!-- ------------------------ -->
