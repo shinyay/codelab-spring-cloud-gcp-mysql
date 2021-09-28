@@ -549,12 +549,27 @@ Spring Cloud GCP Starter has several dependencies. Therefore you need to add the
 - [PostgreSQL] : `org.springframework.cloud:spring-cloud-gcp-starter-sql-postgresql`
 
 
-<!-- ------------------------ -->
-## Completed
-Duration: 1
+#### Boot Run again
 
+Now then, boot run again !
 
-全てのテストが正常終了し、アプリケーションの実装要件を全て満たしました。
+```shell
+$ ./gradlew clean bootRun
+```
 
+You will see the followings:
+```
+  :
+  :
+2021-09-29 08:32:51.930  INFO 53822 --- [           main] c.g.cloud.sql.core.CoreSocketFactory     : Connecting to Cloud SQL instance [shinyay-works-210812:us-central1:my-mysql] via SSL socket.
+2021-09-29 08:32:51.930  INFO 53822 --- [           main] c.g.cloud.sql.core.CoreSocketFactory     : First Cloud SQL connection, generating RSA key pair.
+  :
+  :
+2021-09-29 08:32:55.712  INFO 53822 --- [onnection adder] c.g.cloud.sql.core.CoreSocketFactory     : Connecting to Cloud SQL instance [shinyay-works-210812:us-central1:my-mysql] via SSL socket.
+  :
+  :
+2021-09-29 08:32:57.006  INFO 53822 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+```
 
-以上で、このラボは終了です。
+🎉🎉🎉Booted run the app with Cloud SQL🎉🎉🎉
+
