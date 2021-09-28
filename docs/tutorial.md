@@ -423,6 +423,18 @@ spring:
     enabled: false
 ```
 
+### Database
+You have not prepared for the database though, I have already added the dependency of H2 database which is embedded database to `build.gradle` and `pom.xml`.
+
+This will enable you to use the database.
+
+```
+dependencies {
+	runtimeOnly 'com.h2database:h2'
+}
+```
+
+
 
 <!-- ------------------------ -->
 ## Completed
