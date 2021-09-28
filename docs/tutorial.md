@@ -481,6 +481,22 @@ $ curl -X GET http://localhost:8080/api/v1/employees
 ```
 
 <!-- ------------------------ -->
+## Boot run with Cloud SQL
+Duration: 10
+
+Finally, let's boot run the app with Cloud SQL.
+
+### Creating a Cloud SQL Instance and Database
+
+You need to create a Cloud SQL instance. It is easy to create it by following my article:
+
+- [Getting Started with Spring Cloud GCP: Cloud SQL](https://medium.com/@shinyay/getting-started-with-spring-cloud-gcp-cloud-sql-9ccdf40bcfbc)
+
+
+
+
+
+<!-- ------------------------ -->
 ## Completed
 Duration: 1
 
