@@ -541,6 +541,12 @@ Even though you configred the datasource to Cloud SQL, RumtimeException occurs c
 
 This error happened by the dependency for database.
 
+#### Fix the database dependency
+
+Spring Cloud GCP Starter has several dependencies. Therefore you need to add the proper dependency according to the database you use.
+
+- [MySQL] : `org.springframework.cloud:spring-cloud-gcp-starter-sql-mysql`
+- [PostgreSQL] : `org.springframework.cloud:spring-cloud-gcp-starter-sql-postgresql`
 
 
 <!-- ------------------------ -->
