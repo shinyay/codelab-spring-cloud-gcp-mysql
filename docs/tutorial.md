@@ -584,3 +584,7 @@ The only point was to configure what to use for the external database.
 I will be glad to hear you start using Google Cloud when you tried this lab.
 
 That is the end of this lab.
+
+### About Me
+- 🐦 Twitter: [@yanashin18618](https://twitter.com/yanashin18618)
+- 📝 Blog: [https://medium.com/@shinyay](https://medium.com/@shinyay)
