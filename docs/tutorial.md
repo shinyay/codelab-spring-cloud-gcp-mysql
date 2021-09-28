@@ -510,6 +510,10 @@ You can retrieve the instance connnection name by the following command:
 $ gcloud sql instances describe my-mysql --format='value(connectionName)'
 ```
 
+Ofcource you can find it on Cloud Console:
+
+![connection-name](images/connection-name.png)
+
 <!-- ------------------------ -->
 ## Completed
 Duration: 1
