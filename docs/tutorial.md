@@ -392,6 +392,26 @@ Let's boot run the application when all the tests are passed:
 $ ./gradlew clean bootRun
 ```
 
+### Failed boot run
+
+You will see the application can not run because of `Flyway` dependency. I use it to test the application for testing with database.
+
+```
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Flyway failed to initialize: none of the following migration scripts locations could be found:
+
+        - classpath:db/migration
+
+
+Action:
+
+Review the locations above or check your Flyway configuration
+```
 
 
 
