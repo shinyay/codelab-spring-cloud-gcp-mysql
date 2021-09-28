@@ -335,8 +335,16 @@ Now you can see the following result because you don't have implemented any logi
 
 ![integration-all-fail](images/integration-all-fail.png)
 
-### Clue: 
+### Clue: `Given_Integration_When_findAllEmployees_Then_return_properties()`
 
+#### Coulumn name mismatch
+You will see such as the following error message:
+
+```java
+Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'employee0_.dep_id' in 'field list'
+```
+
+You can define the custom column name with `@Column` annotation. 
 
 <!-- ------------------------ -->
 ## Completed
