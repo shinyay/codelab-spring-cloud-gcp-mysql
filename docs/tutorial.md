@@ -529,6 +529,18 @@ I suppose you have already know the property. This property is the datasource co
 You can find the how-to properties:
 [Spring Boot Reference](https://docs.spring.io/spring-boot/docs/current/reference/html/howto.html#howto.data-access.configure-custom-datasource)
 
+### Boot run
+
+Let' boot run now. What will you see ?
+
+```
+java.lang.RuntimeException: Driver com.mysql.cj.jdbc.Driver claims to not accept jdbcUrl, jdbc:h2:mem:50f76a13-289b-4e33-ae7f-2342d409a607;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+```
+
+Even though you configred the datasource to Cloud SQL, RumtimeException occurs concerning H2 database.
+
+This error happened by the dependency for database.
+
 
 
 <!-- ------------------------ -->
