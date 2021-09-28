@@ -474,6 +474,12 @@ POST Data:
 $ curl -X POST -H "Content-Type: application/json" -d '{"name":"Alice", "role":"Security Engineer","departmentId":100}' localhost:8080//api/v1/employees
 ```
 
+GET Data:
+
+```shell
+$ curl -X GET http://localhost:8080/api/v1/employees
+```
+
 <!-- ------------------------ -->
 ## Completed
 Duration: 1
