@@ -377,6 +377,11 @@ Now take a look at the test code:
 
 The above code expects DELETE method with employee id. It might be good to check your api.
 
+### Clue
+You can implement the other methos in the same way.
+
+![integration-all-pass](images/integration-all-pass.png)
+
 <!-- ------------------------ -->
 ## Completed
 Duration: 1
