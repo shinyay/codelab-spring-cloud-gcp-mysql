@@ -573,3 +573,14 @@ You will see the followings:
 
 🎉🎉🎉Booted run the app with Cloud SQL🎉🎉🎉
 
+<!-- ------------------------ -->
+## Key take away
+Duration: 1
+
+You just learned how to start **Spring Cloud GCP with Cloud SQL** at this lab. I am sure many people thought it was easy if you have already known Spring.
+
+The only point was to configure what to use for the external database.
+
+I will be glad to hear you start using Google Cloud when you tried this lab.
+
+That is the end of this lab.
