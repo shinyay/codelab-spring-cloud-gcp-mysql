@@ -6,10 +6,10 @@ This is Codelabs tutorial.
 
 [Template Project: shinyay/codelabs-markdown-template](https://github.com/shinyay/codelabs-markdown-template)
 
-- [Lab Release: v1.0.0](https://github.com/users/shinyay/packages/container/package/codelab-spring-cloud-run-gs)
-  - `docker pull ghcr.io/shinyay/codelab-spring-cloud-run-gs:1.0.0`
+- [Lab Release: v1.0.0](https://github.com/users/shinyay/packages/container/package/codelab-spring-cloud-gcp-mysql)
+  - `docker pull ghcr.io/shinyay/codelab-spring-cloud-gcp-mysql:1.0.0`
 
-- [Tutorial Code: shinyay/codelab-spring-boot-rest-code](https://github.com/shinyay/codelab-spring-boot-rest-code)
+- [Tutorial Code: shinyay/codelab-spring-cloud-gcp-mysql-code-java](https://github.com/shinyay/codelab-spring-cloud-gcp-mysql-code-java)
 
 ### Directories description
 - `docs` : Codelabs Markdown document
